@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  background-color: #F4F4EE;
+  color: #333333;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-x-180 {
+  transform: rotateX(180deg);
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.markdown-body {
+  color: #333333;
+  line-height: 2;
+  font-size: 1.05rem;
+}
+
+.markdown-body h3 {
+  color: #111111;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #E5E5DF;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.markdown-body h3::before {
+  content: "✦";
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #8B0000;
+}
+
+.markdown-body p {
+  margin-bottom: 1.2rem;
+}
+
+.markdown-body ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.markdown-body li::before {
+  content: "•";
+  color: #8B0000;
+  position: absolute;
+  left: 0.5rem;
+  font-weight: bold;
+}
+
+.markdown-body strong {
+  color: #111111;
+  font-weight: 600;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #8B0000;
+  padding-left: 1rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  background: rgba(139, 0, 0, 0.03);
+  padding: 1rem;
+}
