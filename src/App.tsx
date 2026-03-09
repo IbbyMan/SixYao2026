@@ -306,6 +306,14 @@ ${finalTosses.join(', ')}
       {!isTossing && tosses.length === 0 && !result && !isGenerating && (
         <div className="flex flex-col items-center justify-center min-h-screen pt-10 pb-20">
           <div className="mb-16 text-center">
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/logo.png" 
+                alt="六爻请回答2026 Logo" 
+                className="w-24 h-24 md:w-32 md:h-32 mx-auto object-contain"
+              />
+            </div>
             <h1 className="text-3xl md:text-4xl tracking-[0.15em] font-normal text-[#111111] flex items-center justify-center">
               请回答 <span className="font-['Playfair_Display'] ml-3 text-[1.1em] tracking-widest font-medium">2026</span>
               <span className="mx-4 text-[#8B0000] font-light opacity-50">|</span> 
@@ -403,6 +411,14 @@ ${finalTosses.join(', ')}
           className="w-full max-w-3xl px-6 py-16 mx-auto"
         >
           <div className="text-center mb-16 border-b border-[#E5E5DF] pb-16">
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/logo.png" 
+                alt="六爻请回答2026 Logo" 
+                className="w-20 h-20 md:w-24 md:h-24 mx-auto object-contain"
+              />
+            </div>
             <div className="text-[#A3A398] text-sm tracking-widest mb-6">占卜问题</div>
             <h2 className="text-3xl mb-12">{question}</h2>
             
